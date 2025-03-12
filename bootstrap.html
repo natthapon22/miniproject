@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>การใช้งาน Bootstrap</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="image/favicon4.ico" type="image/x-icon">
+
+  
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-4">
+    <h1 class="fw-bold">การใช้งาน Bootstrap</h1>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">การใช้งาน Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">เกี่ยวกับ HTML</a></li>
+          <li class="nav-item"><a class="nav-link" href="basics.html">การใช้งาน CSS</a></li>
+          <li class="nav-item"><a class="nav-link " href="bootstrap.html">การใช้งาน Bootstrap</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="container mt-4">
+    <div class="content-section">
+      <h2 class="text-primary">Bootstrap คืออะไร?</h2>
+      <p>Bootstrap เป็นเฟรมเวิร์กที่ช่วยให้การออกแบบเว็บไซต์สะดวกยิ่งขึ้น โดยให้เครื่องมือต่างๆ เช่น ระบบกริด ปุ่ม ฟอร์ม และอีกมากมาย</p>
+
+      <h2 class="text-success mt-4">ข้อดีของ Bootstrap</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>✅ Responsive :</strong> นี่คือจุดเด่นที่สุดของ Bootstrap เลยก็ว่าได้ครับ คือเราจะได้เว็บที่ responsive ปรับเปลี่ยนให้เหมาะสมและใช้งานง่ายไปตามแต่ละอุปกรณ์ที่แสดงผล เช่น desktop, mobile, tablet เป็นต้น </li>
+        <li class="list-group-item"><strong>✅ Grid & Layout :</strong> ระบบ Grid และการจัด Layout ของ Bootstrap ที่เรียกได้ว่า ง่ายและสะดวกพร้อมใช้งานสุด ๆ ทำให้เราไม่ต้องเสียเวลาเขียนระบบพวกนี้ เช่น สร้าง Flexbox หรือ Media Query ใน CSS ตั้งแต่ต้น</li>
+        <li class="list-group-item"><strong>✅ Easy to Customize :</strong> ปรับแต่งได้ง่าย ถึงแม้ว่า Bootstrap จะมี components ต่าง ๆ มาให้เราครบครัน ไม่ว่าจะเป็นระบบ grid, layout, button, form, navbar, etc แต่ก็ไม่ได้เป็นปัญหาในการ custom ตามที่เราต้องการ เพราะว่ามันสามารถ custom ได้แต่ก็อาจจะลงแรงเพิ่มนิดนึง</li>
+        <li class="list-group-item"><strong>✅ Fast Development :</strong> ช่วยให้พัฒนาเว็บได้เร็วขึ้น ด้วยข้อดีของ Bootstrap ในด้านบนที่กล่าวมา ทำให้เราพัฒนาโปรเจคท์ของเราได้อย่างรวดเร็ว</li>
+      </ul>
+
+      <h2 class="text-danger mt-4">ข้อเสียของ Bootstrap</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>⚠️ ดูคล้ายเว็บอื่น :</strong> เว็บที่ใช้ Bootstrap มักมีดีไซน์คล้ายกัน นี่คือจุดด้อยหลัก ๆ ของ Bootstrap ก็เพราะว่า เว็บที่เราทำใช้ components ต่าง ๆ ที่มาจากแหล่งเดียวกันคือ Bootstrap ดังนั้นจะเห็นได้ว่า จะดูซ้ำหรือคล้ายคลึงกันกับเว็บอื่นที่ใช้ Bootstrap เหมือนกัน ยิ่งคนที่เป็น developer จะดูออกเลยว่า เว็บไหนใช้ Bootstrap</li>
+        <li class="list-group-item"><strong>⚠️ ขนาดไฟล์ใหญ่ :</strong> อาจมีผลต่อความเร็วโหลดเว็บ ขนาดไฟล์ของ Bootstrap นั้น จะใหญ่กว่า JS และ CSS ปกติ เพราะว่าต้องมีการใช้สร้าง components มากมาย</li>
+      </ul>
+
+      <h2 class="text-primary mt-4">การเริ่มต้นใช้งาน Bootstrap</h2>
+      <p>เพียงคัดลอกลิงก์ CDN ด้านล่างไปวางใน &lt;head&gt; ของ HTML</p>
+      
+      <div class="alert alert-info">
+        <strong>Bootstrap CSS CDN</strong>
+        <pre class="bg-light p-3 rounded"><code>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"&gt;</code></pre>
+      </div>
+
+      <div class="alert alert-warning">
+        <strong>Bootstrap JS CDN</strong>
+        <pre class="bg-light p-3 rounded"><code>&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;</code></pre>
+      </div>
+
+      <h3 class="text-primary mt-4">Bootstrap Colors</h3>
+      <p><strong>สีที่สามารถใช้ใน Bootstrap</strong></p>
+      <p>โดย Bootstrap จะแบ่งสีออกเป็น 7 โทนสี ต่อไปนี้คือเทคนิคการจำโทนสีของ Bootstrap ดังแต่ละคลาสต่อไปนี้</p>
+      <ul class="bg-light">
+        <li><strong>primary: โทนสีฟ้า</strong></li>
+        <li><strong>secondary: โทนสีเทา</strong></li>
+        <li><strong>success: โทนสีเขียว</strong></li>
+        <li><strong>danger: โทนสีแดง</strong></li>
+        <li><strong>warning: โทนสีเหลือง</strong></li>
+        <li><strong>info: โทนสีฟ้าน้ำทะเล</strong></li>
+        <li><strong>light: สีสีสว่าง</strong></li>
+        <li><strong>dark: โทนสีดำ</strong></li>
+      </ul>
+      <div class="container mt-4">
+        <h2 class="text-primary">ตัวอย่างการใช้งานปุ่ม (Buttons) ใน Bootstrap</h2>
+        <p>คุณสามารถใช้ปุ่มเหล่านี้ในการสร้างปฏิสัมพันธ์กับผู้ใช้งาน</p>
+    
+        <!-- ปุ่มต่าง ๆ จาก Bootstrap -->
+        <button type="button" class="btn btn-primary">Primary</button>
+        <p><strong>btn btn-primary:</strong> ปุ่มหลักที่ใช้สำหรับการกระทำหลัก</p>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <p><strong>btn btn-secondary:</strong> ปุ่มที่ใช้ในกรณีที่ไม่ต้องการให้เด่นมาก</p>
+        <button type="button" class="btn btn-success">Success</button>
+        <p><strong>btn btn-success:</strong> ปุ่มแสดงผลสำเร็จ เช่น เมื่อทำการส่งข้อมูลสำเร็จ</p>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <p><strong>btn btn-danger:</strong> ปุ่มที่ใช้แสดงถึงความเสี่ยงหรือความผิดพลาด</p>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <p><strong>btn btn-warning:</strong> ปุ่มที่แสดงคำเตือน</p>
+        <button type="button" class="btn btn-info">Info</button>
+        <p><strong>btn btn-info:</strong> ปุ่มแสดงข้อมูล</p>
+        <button type="button" class="btn btn-light">Light</button>
+        <p><strong>btn btn-light:</strong> ปุ่มสีอ่อน</p>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <p><strong>btn btn-dark:</strong> ปุ่มสีเข้ม</p>
+        <button type="button" class="btn btn-link">Link</button>
+        <p><strong>btn btn-link:</strong> ปุ่มที่ดูเหมือนลิงก์</p>
+      </div>
+      
+      
+      <p class="mt-3">เพียงเท่านี้ ก็สามารถเริ่มใช้งาน Bootstrap กันได้แล้ว!</p>
+    </div>
+  </div>
+
+   <!-- ช่องส่วนท้าย (Empty Space) -->
+   <div class="container mt-4">
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 border-bottom text-success">เลือกหัวข้อการศึกษา</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="image/html.png" alt="" width="200">
+          </div>
+          <h3 class="fs-2 text-body-emphasis">พื้นฐาน HTML</h3>
+          <p>HTML (Hypertext Markup Language) เป็นภาษามาร์กอัพที่ใช้ในการสร้างโครงสร้างของเว็บเพจ โดยใช้แท็กต่างๆ เพื่อบอกให้เว็บเบราว์เซอร์รู้ว่าเนื้อหาควรแสดงอย่างไร</p>
+          <a href="about.html" class="icon-link">
+            พื้นฐาน HTML
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="image/css1.png" alt="" width="200">
+          </div>
+          <h3 class="fs-2 text-body-emphasis">การใช้งาน CSS</h3>
+          <p>CSS (Cascading Style Sheets)
+            คือภาษาที่ใช้ในการกำหนดรูปแบบและความสวยงามให้กับหน้าเว็บ HTML โดยทำหน้าที่ควบคุมลักษณะขององค์ประกอบต่าง ๆ เช่น สี ขนาดตัวอักษร ระยะห่าง และการจัดวางตำแหน่งขององค์ประกอบในหน้าเว็บ</p>
+          <a href="basics.html" class="icon-link">
+            การใช้งาน CSS
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="image/bss.jpg" alt="" width="200">
+          </div>
+          <h3 class="fs-2 text-body-emphasis">การใช้งาน Bootstrap</h3>
+          <p>Bootstrap เป็นเฟรมเวิร์กที่ช่วยให้การออกแบบเว็บไซต์สะดวกยิ่งขึ้น โดยให้เครื่องมือต่างๆ เช่น ระบบกริด ปุ่ม ฟอร์ม และอีกมากมาย</p>
+          <a href="bootstrap.html" class="icon-link">
+            การใช้งาน Bootstrap
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>&copy; 2025 การเรียนรู้ภาษา HTML เบื้องต้น</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

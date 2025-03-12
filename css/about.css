@@ -1,0 +1,33 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+h2{
+  color: #007bff;
+}
+
+
+table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+table th, table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+table th {
+  background-color: #007bff;
+  color: rgb(255, 0, 0);
+}
+
+pre {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}

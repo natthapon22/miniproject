@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>พื้นฐาน HTML</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="image/favicon5.ico" type="image/x-icon">
+
+</head>
+<body>
+  <header class="bg-primary text-white text-center py-4">
+    <h1 class="fw-bold">การใช้งาน CSS</h1>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">การใช้งาน CSS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">เกี่ยวกับ HTML</a></li>
+          <li class="nav-item"><a class="nav-link" href="basics.html">การใช้งาน CSS</a></li>
+          <li class="nav-item"><a class="nav-link " href="bootstrap.html">การใช้งาน Bootstrap</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h2 class="text-primary">CSS (Cascading Style Sheets)</h2>
+    <p>คือภาษาที่ใช้ในการกำหนดรูปแบบและความสวยงามให้กับหน้าเว็บ HTML โดยทำหน้าที่ควบคุมลักษณะขององค์ประกอบต่าง ๆ เช่น สี ขนาดตัวอักษร ระยะห่าง และการจัดวางตำแหน่งขององค์ประกอบในหน้าเว็บ</p>
+
+    <h2 class="text-success">ความสำคัญของ CSS</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><strong>ช่วยให้หน้าเว็บสวยงามและน่าใช้งาน</strong>  สามารถปรับแต่งสี ขนาด และรูปแบบขององค์ประกอบต่าง ๆ ได้อย่างอิสระ</li>
+      <li class="list-group-item"><strong>แยกโครงสร้างออกจากการตกแต่ง</strong>  ทำให้โค้ด HTML มีความสะอาดและเป็นระเบียบมากขึ้น</li>
+      <li class="list-group-item"><strong>เพิ่มประสิทธิภาพในการพัฒนาเว็บ</strong>  ใช้ CSS ซ้ำได้ในหลายหน้า ลดการเขียนโค้ดซ้ำ</li>
+      <li class="list-group-item"><strong>รองรับการแสดงผลในหลายอุปกรณ์ (Responsive Design)</strong>  สามารถปรับการแสดงผลให้เหมาะสมกับหน้าจอขนาดต่าง ๆ</li>
+    </ul>
+
+    <h2 class="text-success mt-4">วิธีการใช้งาน CSS</h2>
+    <p>การเขียน CSS มีหลายรูปแบบในการจัดการหลัก ๆ มีอยู่ 3 รูปแบบ ซึ่งในแต่ละรูปแบบก้จะมีจุดประส์ในการใช้งานที่แตกต่างกัน แต่ยังใช้ไวยากรณ์ของภาษา CSS ยังคงเดิม เพียงแค่รูปแบบการจัดวางที่แตกต่างกัน โดยทั้งทั้งหมด 3 รูปแบบ ดังนี้</p>
+    <ul>
+      <li>Inline Style Sheet: เป็นการแทรกคำสั่ง CSS ลงในส่วนของแท็กนั้น ๆ</li>
+      <li>Internal Style Sheet: ใช้สำหรับเขียน CSS เพื่อใช้งานในหน้าเว็บเพจหนึ่ง ๆ โดยจะเขียนไว้ในส่วน head</li>
+      <li>External Style Sheet: เป็นการเขียน CSS ภายนอกเอกสาร html วิธีนี้จะทำได้ด้วยการสร้างไฟล์เอกสาร CSS ไว้อีกหนึ่งไฟล์ที่มีนามสกุล .css แล้วภายในเขียนคำสั่ง CSS ไว้ทั้งหมด</li>
+    </ul>
+    
+    <h2 class="mt-4 text-warning">ตัวอย่างการใช้งาน CSS</h2>
+    <h3>1. Inline Style Sheet</h3>
+    <p>เป็นการแทรกคำสั่ง CSS ลงในส่วนของแท็กนั้น ๆ โดยทำหน้าที่ เปรียบเสมือน Attribute (คุณสมบัติ) ของแท็กนั้นๆ มีรูปแบบคือ style = ” คำสั่ง CSS ”</p>
+    <p>ตัวอย่าง ทำให้เป็นตัวอักษรสีเเดง :</p>
+    <img src="image/inline.png" class="img-fluid rounded shadow" alt="Inline CSS">
+
+    <h3 class="mt-4">2. Internal Style Sheet</h3>
+    <p>ใช้สำหรับเขียน CSS เพื่อใช้งานในหน้าเว็บเพจหนึ่ง ๆ โดยจะเขียนไว้ในส่วน <head></head> ของหน้าเว็บเพจนั้น ๆ โดยโค้ด CSS จะต้องอยู่ภายในแท็ก style อีกที</p>
+    <p>ตัวอย่าง การกำหนดให้ ข้อความใน tag p มีสีน้ำเงินและอยู่ตรงกลาง</p>
+    <img src="image/internal.png" class="img-fluid rounded shadow" alt="Internal CSS">
+
+    <h3 class="mt-4">3. External Style Sheet</h3>
+    <p>เป็นการเขียน CSS ภายนอกเอกสาร html วิธีนี้จะทำได้ด้วยการสร้างไฟล์เอกสาร CSS ไว้อีกหนึ่งไฟล์ที่มีนามสกุล .css แล้วภายในเขียนคำสั่ง CSS ไว้ทั้งหมด เมื่อต้องการให้สไตล์นี้มีผลกับไฟล์เอกสาร html ก็สามารถเชื่อมโยงไฟล์นั้นๆได้ โดยสร้างโฟล์ไว้สองไฟล์ในโฟล์เดอร์เดียวกัน</p>
+    <p>ตัวอย่าง html และไฟล์ style.css</p>
+    <img src="image/external.png" class="img-fluid rounded shadow" alt="External CSS">
+
+    <h2 class="text-success mt-4">การตกแต่งตัวอักษร (Font)</h2>
+    <ul class="list-group list-group-flush ">
+      <li class="list-group-item">property color - ใช้กำหนดสีตัวอักษร</li>
+      <li class="list-group-item">property font-family - ใช้กำหนดประเภทตัวอักษร</li>
+      <li class="list-group-item">property font-size - ใช้กำหนดขนาดตัวอักษร</li>
+    </ul><br>
+
+    <h2 class="text-success">การกำหนด Class เเละ ID</h2>
+    <p>การกำหนด Class เเละ ID จะต้องกำหนดใน HTML ไฟล์.html เป็นเหมือนการกำหนดชื่อเล่นหรือชื่อจริงให้ HTML Element การกำหนด Class , ID นั้นจะช่วยในทำให้เราไม่งงในการเขียนตกเเต่งในไฟล์ .css</p>
+    <p class="text-danger">*** Class สามารถตั้งซ้ำกันในไฟล์ HTML ได้ เเต่ ID ไม่สามารถตั้งซ้ำกันได้ ***</p>
+    <h3>ตัวอย่างการกำหนด Class :</h3>
+    <p >การกำหนด Class ใน CSS เราจะใช้ selector .</p>
+    <h4>Code HTML :</h4>
+    <img src="image/c1.png" alt="">
+    <h4>Code CSS ในไฟล์ .css :</h4>
+    <img src="image/c2.png" alt="">
+
+    <h3>ตัวอย่างการกำหนด ID :</h3>
+    <p>การกำหนด ID ใน CSS เราจะใช้ selector #</p>
+    <h4>Code HTML :</h4>
+    <img src="image/c3.png" alt="">
+    <h4>Code CSS ในไฟล์ .css :</h4>
+    <img src="image/c4.png" alt="">
+
+    <p class="mt-3">เพียงเท่านี้ ก็สามารถเริ่มใช้งาน CSS กันได้แล้ว!</p>
+  </div>
+
+   <!-- ช่องส่วนท้าย (Empty Space) -->
+   <div class="container mt-4">
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 border-bottom text-success">เลือกหัวข้อการศึกษา</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="image/html.png" alt="" width="200">
+          </div>
+          <h3 class="fs-2 text-body-emphasis">พื้นฐาน HTML</h3>
+          <p>HTML (Hypertext Markup Language) เป็นภาษามาร์กอัพที่ใช้ในการสร้างโครงสร้างของเว็บเพจ โดยใช้แท็กต่างๆ เพื่อบอกให้เว็บเบราว์เซอร์รู้ว่าเนื้อหาควรแสดงอย่างไร</p>
+          <a href="about.html" class="icon-link">
+            พื้นฐาน HTML
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="image/css1.png" alt="" width="200">
+          </div>
+          <h3 class="fs-2 text-body-emphasis">การใช้งาน CSS</h3>
+          <p>CSS (Cascading Style Sheets)
+            คือภาษาที่ใช้ในการกำหนดรูปแบบและความสวยงามให้กับหน้าเว็บ HTML โดยทำหน้าที่ควบคุมลักษณะขององค์ประกอบต่าง ๆ เช่น สี ขนาดตัวอักษร ระยะห่าง และการจัดวางตำแหน่งขององค์ประกอบในหน้าเว็บ</p>
+          <a href="basics.html" class="icon-link">
+            การใช้งาน CSS
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="image/bss.jpg" alt="" width="200">
+          </div>
+          <h3 class="fs-2 text-body-emphasis">การใช้งาน Bootstrap</h3>
+          <p>Bootstrap เป็นเฟรมเวิร์กที่ช่วยให้การออกแบบเว็บไซต์สะดวกยิ่งขึ้น โดยให้เครื่องมือต่างๆ เช่น ระบบกริด ปุ่ม ฟอร์ม และอีกมากมาย</p>
+          <a href="bootstrap.html" class="icon-link">
+            การใช้งาน Bootstrap
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>&copy; 2025 การเรียนรู้ภาษา HTML เบื้องต้น</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

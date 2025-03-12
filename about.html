@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เกี่ยวกับ HTML</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/about.css"> <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- ส่วนหัว (Header) -->
+  <header class="bg-primary text-white text-center py-5">
+    <h1 class="text-white">พื้นฐาน HTML</h1>
+    <p class="lead">เรียนรู้ HTML ในแบบที่เข้าใจง่าย</p>
+  </header>
+
+  <!-- เมนู (Navigator) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">พื้นฐาน HTML</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">เกี่ยวกับ HTML</a></li>
+          <li class="nav-item"><a class="nav-link" href="basics.html">การใช้งาน CSS</a></li>
+          <li class="nav-item"><a class="nav-link " href="bootstrap.html">การใช้งาน Bootstrap</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- เนื้อหา (Content) -->
+  <div class="container mt-4">
+    <h2>HTML คืออะไร?</h2>
+    <p>HTML (Hypertext Markup Language) เป็นภาษามาร์กอัพที่ใช้ในการสร้างโครงสร้างของเว็บเพจ โดยใช้แท็กต่างๆ เพื่อบอกให้เว็บเบราว์เซอร์รู้ว่าเนื้อหาควรแสดงอย่างไร</p>
+    <p>HTML คือ ภาษามาร์คอัพที่ใช้สำหรับสร้างหน้าเว็บเพจ เว็บไซต์กว่า 99.99% บนโลกล้วนใช้ภาษา HTML แสดงผลหน้าเว็บโดย HTML จะถูกใช้ควบคู่กันกับ CSS และ JavaScript เป็นภาษาเบื้องต้นที่ทุกคนต้องเรียนรู้เพื่อสร้างเว็บไซต์หรือเว็บแอปพลิเคชัน</p>
+
+    <h2>HTML5</h2>
+    <p>HTML5 เป็นเวอร์ชันล่าสุดของภาษา HTML ซึ่งได้รับการพัฒนาขึ้นเพื่อตอบสนองความต้องการของเว็บไซต์ในยุคสมัยใหม่...</p>
+
+    <h2>ฟีเจอร์สำคัญต่าง ๆ ของ HTML5</h2>
+    <ul>
+        <li><strong>Semantic Elements:</strong> ใช้แท็กที่มีความหมาย เช่น &lt;header&gt;, &lt;nav&gt;, &lt;article&gt;, &lt;section&gt;, &lt;footer&gt;</li>
+        <li><strong>Multimedia Support:</strong> รองรับวิดีโอและเสียงผ่านแท็ก &lt;video&gt; และ &lt;audio&gt;</li>
+        <li><strong>Canvas และ SVG:</strong> รองรับการวาดกราฟิกผ่าน &lt;canvas&gt; และ SVG</li>
+        <li><strong>Geolocation:</strong> ให้เว็บสามารถเข้าถึงตำแหน่งของผู้ใช้</li>
+        <li><strong>Local Storage:</strong> ช่วยจัดเก็บข้อมูลในเบราว์เซอร์เพื่อให้ทำงานออฟไลน์ได้</li>
+        <li><strong>Responsive Design:</strong> ทำงานร่วมกับ CSS3 เพื่อรองรับขนาดหน้าจอที่หลากหลาย</li>
+        <li><strong>Form Enhancements:</strong> เพิ่มประเภทของ input ใหม่ เช่น date, email, range, search และ form validation</li>
+    </ul>
+
+    <h2>ตัวอย่าง HTML Tags ต่าง ๆ</h2>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>ชื่อ HTML Tags</th>
+          <th>คำอธิบาย</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&lt;head&gt;</td>
+          <td>เก็บข้อมูล metadata เช่น title, description, และ favicon</td>
+        </tr>
+        <tr>
+          <td>&lt;title&gt;</td>
+          <td>กำหนดชื่อเรื่องของหน้าเว็บ</td>
+        </tr>
+        <tr>
+          <td>&lt;body&gt;</td>
+          <td>ใช้แสดงเนื้อหาของเว็บเพจ</td>
+        </tr>
+        <tr>
+          <td>&lt;footer&gt;</td>
+          <td>แสดงข้อมูลล่างสุดของหน้าเว็บ เช่น Copyright, About Us</td>
+        </tr>
+        <tr>
+          <td>&lt;h1&gt;</td>
+          <td>หัวเรื่องหลักของเว็บ</td>
+        </tr>
+        <tr>
+          <td>&lt;p&gt;</td>
+          <td>ใช้กำหนดพารากราฟ</td>
+        </tr>
+        <tr>
+          <td>&lt;html&gt;</td>
+          <td>เป็น root element ของ HTML</td>
+        </tr>
+        <tr>
+          <td>&lt;a&gt;</td>
+          <td>ใช้สร้างลิงก์ไปยัง URL ต่าง ๆ</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Heading Tags คืออะไร?</h2>
+    <p>แท็ก Headings ของ HTML ใช้เพื่อกำหนดส่วนหัวหรือชื่อเรื่องของส่วนต่าง ๆ บนหน้าเว็บ...</p>
+
+    <h3>ตัวอย่างโค้ด HTML Headings</h3>
+    <pre>
+      &lt;h1&gt;This is heading 1&lt;/h1&gt;
+      &lt;h2&gt;This is heading 2&lt;/h2&gt;
+      &lt;h3&gt;This is heading 3&lt;/h3&gt;
+      &lt;h4&gt;This is heading 4&lt;/h4&gt;
+      &lt;h5&gt;This is heading 5&lt;/h5&gt;
+      &lt;h6&gt;This is heading 6&lt;/h6&gt;
+    </pre>
+
+    <h2>HTML Images</h2>
+    <p>รูปภาพใน HTML ใช้แท็ก &lt;img&gt; เพื่อแสดงภาพในเว็บไซต์...</p>
+
+    <h2>HTML Table</h2>
+    <p>บทเรียนนี้จะพาไปเรียนรู้ HTML Table ซึ่งเป็นหนึ่งในองค์ประกอบที่สำคัญในการสร้างตารางข้อมูลบนเว็บไซต์...</p>
+
+    <h3>ตัวอย่างการสร้างตารางใน HTML แบบง่าย ๆ</h3>
+    <pre>
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td&gt;ชื่อ&lt;/td&gt;
+          &lt;td&gt;อายุ&lt;/td&gt;
+          &lt;td&gt;อาชีพ&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;ณัฐพล&lt;/td&gt;
+          &lt;td&gt;19&lt;/td&gt;
+          &lt;td&gt;นักศึกษา&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;ภิดารัตน์&lt;/td&gt;
+          &lt;td&gt;23&lt;/td&gt;
+          &lt;td&gt;โปรแกรมเมอร์&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    </pre>
+  </div>
+
+   <!-- ช่องส่วนท้าย (Empty Space) -->
+   <div class="container mt-4">
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 border-bottom text-success">เลือกหัวข้อการศึกษา</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="image/html.png" alt="" width="200">
+          </div>
+          <h3 class="fs-2 text-body-emphasis">พื้นฐาน HTML</h3>
+          <p>HTML (Hypertext Markup Language) เป็นภาษามาร์กอัพที่ใช้ในการสร้างโครงสร้างของเว็บเพจ โดยใช้แท็กต่างๆ เพื่อบอกให้เว็บเบราว์เซอร์รู้ว่าเนื้อหาควรแสดงอย่างไร</p>
+          <a href="about.html" class="icon-link">
+            พื้นฐาน HTML
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="image/css1.png" alt="" width="200">
+          </div>
+          <h3 class="fs-2 text-body-emphasis">การใช้งาน CSS</h3>
+          <p>CSS (Cascading Style Sheets)
+            คือภาษาที่ใช้ในการกำหนดรูปแบบและความสวยงามให้กับหน้าเว็บ HTML โดยทำหน้าที่ควบคุมลักษณะขององค์ประกอบต่าง ๆ เช่น สี ขนาดตัวอักษร ระยะห่าง และการจัดวางตำแหน่งขององค์ประกอบในหน้าเว็บ</p>
+          <a href="basics.html" class="icon-link">
+            การใช้งาน CSS
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="image/bss.jpg" alt="" width="200">
+          </div>
+          <h3 class="fs-2 text-body-emphasis">การใช้งาน Bootstrap</h3>
+          <p>Bootstrap เป็นเฟรมเวิร์กที่ช่วยให้การออกแบบเว็บไซต์สะดวกยิ่งขึ้น โดยให้เครื่องมือต่างๆ เช่น ระบบกริด ปุ่ม ฟอร์ม และอีกมากมาย</p>
+          <a href="bootstrap.html" class="icon-link">
+            การใช้งาน Bootstrap
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 พื้นฐาน HTML | สร้างโดยทีมงานของเรา</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
